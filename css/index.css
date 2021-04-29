@@ -53,14 +53,14 @@ margin-top: 50px;
 /* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
-  background-color: #f1f1f1;
-  padding: 20px 10px;
+  background-color: #0D0D0D;
+  padding: 20px 20px;
 }
 
 /* Style the header links */
 .header a {
   float: left;
-  color: black;
+  color: lightgrey;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -77,19 +77,21 @@ margin-top: 50px;
 
 /* Change the background color on mouse-over */
 .header a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: none;
+  color: gray;
 }
 
 /* Style the active/current link*/
 .header a.active {
-  background-color: dodgerblue;
-  color: white;
+  background-color: none;
+  color: gray;
 }
 
 /* Float the link section to the right */
 .header-right {
+  height: 50%;
   float: right;
+
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */ 
@@ -104,11 +106,7 @@ margin-top: 50px;
   }
 }
 
-/* Two Column */
-.column {
-  float: left;
-  width: 50%;
-}
+
 
 
 /* Clear floats after the columns */
@@ -116,4 +114,31 @@ margin-top: 50px;
   content: "";
   display: table;
   clear: both;
+}
+
+/* Hero Image */
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  color: red;
+}
+
+body {
+  background-color: green;
+}
+
+.hero,
+.hero-bg,
+.content {
+  height: 100%;
+}
+
+.hero-bg {
+  background-image: url('http://via.placeholder.com/1000x300');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 80%;
+  opacity: 1;
 }
